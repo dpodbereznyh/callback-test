@@ -1,0 +1,11 @@
+.btn {
+  padding: 16px 32px;
+  background: $dark;
+  transition: .35s;
+  color: $light;
+  &:hover {
+    background: $default;
+    transition: .35s;
+    color: $light;
+  }
+}

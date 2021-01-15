@@ -1,0 +1,203 @@
+.header {
+  background: $dark;
+  padding: 32px 0;
+  >.container-fluid {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+  }
+  &__logo {
+    max-width: 100px;
+    height: auto;
+    display: block;
+  }  
+  &__contacts_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  &__contacts_item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__contacts_item_link {
+    margin: 0;
+    text-decoration: none;
+    color: $light;
+    transition: 0.35s;
+    &:hover {
+      color: $secondary;
+      transition: 0.35s;
+    }
+  }
+  &__contacts_item_icon {
+    width: 26px;
+    height: auto;
+    margin-right: 16px;
+    img {
+      filter: drop-shadow(0px 4px 25px #F06352);
+    }
+  }
+}
+@media screen and (max-width: 485.5px) {
+  .header__logo {
+    margin-right: 16px;
+  }
+  .header__contacts_item_icon {
+    width: 16px;
+    margin-right: 8px;
+  }
+  .header__contacts_item_link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+//Main-form
+.main-form {
+  background: $dark_3;
+  padding: 64px 0;
+  &__form {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    color: $light;
+    margin-bottom: 32px;
+  }
+  &__form_input {
+    width: 25%;
+    max-width: 280px;
+    padding: 16px;
+    border: 0.5px solid $dark_8;
+    border-radius: 10px;
+    margin-right: 32px;
+    max-height: 52px;
+    &::placeholder {
+      color: $dark;
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;                  
+    }
+  }
+  &__form_btn {
+    background: #F06352;
+    box-shadow: 0px 10px 35px rgba(240, 99, 82, 0.55);
+    border-radius: 10px;
+    border: none;
+    color: $light;
+    width: 233px;
+    padding: 16px;
+    max-height: 52px;
+    transition: .35s;
+    &:hover {
+      background: $secondary_d2;
+      transition: .35s;
+      box-shadow: 0px 2px 35px rgba(240, 99, 82, 0.55);
+
+    }
+  }
+  &__loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    // background: rgba(240, 240, 240, 0.91);
+    overflow: hidden;
+    display: none;
+    z-index: 777;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100px;
+      height: auto;
+    }
+  }
+  &__form_overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(240, 240, 240, 0.91);
+    left: 0px;
+    top: 0px;
+    cursor: pointer;
+  }
+  &__form_overlay_error {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(240, 240, 240, 0.91);
+    left: 0px;
+    top: 0px;
+    cursor: pointer;
+  }
+  &__form_overlay_thx {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: block;
+    background: #fff;
+    padding: 50px;
+  }
+  &__form_overlay_error_text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: block;
+    background: #fff;
+    padding: 50px;
+    color: red;
+  }
+}
+@media screen and (max-width: 993.5px) {
+  .main-form {
+    &__form {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__title {
+      text-align: center;
+    }
+    &__form_input {
+      width: 90%;
+      max-width: 500px;
+      margin-bottom: 16px;
+      margin-right: 0;
+    }
+    &__form_btn {
+      margin-top: 32px;
+    }
+  }
+}
+@media screen and (max-width: 440.5px) {
+  .main-form__form_input {
+    width: 100%;
+  }
+}
+/*******Footer*******/
+.footer {
+  padding: 64px 0;
+  border-top: 0.5px solid $dark_3;
+  &__copyright {
+    color: $dark_3;
+    text-align: center;
+  }
+}
+/*******End Footer*******/

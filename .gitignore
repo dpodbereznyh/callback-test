@@ -1,0 +1,14 @@
+/node_modules/
+/build/
+build/
+/.git/
+/.idea/
+/**/_backstage
+/**/package-lock.json
+/**/Thumbs.db
+/**/*.DS_Store
+/app/js/scripts.min.js
+/app/css/main.min.css
+app/css/vendors/bootstrap/scss/bootstrap.min.css
+app/css/vendors/bootstrap/scss/bootstrap-reboot.min.css
+app/css/vendors/bootstrap/scss/bootstrap-grid.min.css

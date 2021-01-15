@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Тестовое задание</title>
+    <link rel="icon" href="img/fanicon/favicon.png">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+<header class="header">
+  <div class="container-fluid">
+    <a href="/" class="header__logo" title="Перейти к резюме">
+        <img src="img/header/portfolio-foto.jpg"  alt="logo">
+    </a> 
+    <ul class="header__contacts_list">
+      <li class="header__contacts_item">
+        <a class="header__contacts_item_link h4" href="https://hh.ru/resume/1cb81690ff07a5c9930039ed1f3768344e5948" target="_blank">
+          Подберезных Денис
+        </a>
+      </li>
+      <li class="header__contacts_item">
+        <div class="header__contacts_item_icon">
+          <img src="img/header/header-phone-icon.svg" alt="">
+        </div>
+        <a class="header__contacts_item_link h4" href="tel:+79322509714" target="_blank">
+          +7 (932) 250-97-14
+        </a>
+      </li>
+      <li class="header__contacts_item">
+        <div class="header__contacts_item_icon">
+          <img src="img/header/header-email-icon.svg" alt="">
+        </div>
+        <a class="header__contacts_item_link h4" href="mailto:dpodbereznyh@gmail.com" target="_blank">
+          dpodbereznyh@gmail.com
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</header>
+  <main class="main"> 
+    <section class="main-form section">
+      <div class="container-fluid">
+        <h2 class="h2 main-form__title">
+          Форма обратной связи
+        </h2>
+        <form class="main-form__form js-form-default">
+          <input class="main-form__form_input" type="hidden" value="Заявка с формы 'Форма обратной связи'" name="title">
+          <input class="main-form__form_input" type="text" placeholder="Имя" name="name">
+          <input class="main-form__form_input" type="tel" placeholder="Телефон" name="phone" required>
+          <input class="main-form__form_input" type="email" placeholder="E-mail" name="email">
+          <button type="submit" class="main-form__form_btn h4">Отправить</button>
+        </form>
+      </div>
+      <div class="main-form__loader">
+        <img src="img/main-form/ripple.svg">
+      </div>
+      <div class="main-form__form_overlay">
+        <div class="main-form__form_overlay_thx">
+            Спасибо! Мы обязательно вам перезвоним
+        </div>
+      </div>
+      <div class="main-form__form_overlay_error">
+        <div class="main-form__form_overlay_error_text">
+            Что-то пошло не так...
+        </div>
+      </div>
+    </section>     
+  </main>
+  <footer class="footer" id="footer">
+    <div class="container-fluid">
+      <p class="footer__copyright h3">
+        Благодарю за внимание к моей кандидатуре :)
+      </p>
+    </div>  
+  </footer>
+<script src="js/scripts.min.js" async></script>
+
+</body>
+</html>
+
